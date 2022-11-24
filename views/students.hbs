@@ -1,0 +1,26 @@
+<h1>Student List</h1>
+ {{#if students}}
+<table>
+    
+    <tr>
+        <th>Student id</th>
+        <th>Name</th>
+        <th>Program</th>
+        <th>GPA</th>
+    </tr>
+     {{#each students}}
+     <tr>
+        <td>{{this.studId}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.program}}</td>
+        <td>{{this.gpa}}</td>
+     </tr>
+     </div>
+     {{/each}}
+</table>
+{{else}}
+    <tr>
+        <td colspan = "4">{{message}} </td>
+    </tr>
+
+ {{/if}}

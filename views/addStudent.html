@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        .center {
+            width : 50%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center">Add Student</h1>
+    <div class = "center">
+        <fieldset>
+            <legend>Student Information</legend> 
+        <form name="addStudent" method = "post" 
+        enctype = "application/x-www-form-urlencoded"
+             action = "/addStudent">
+             <div>
+            <!-- <p> Student Id: <input type = "text" name = "studId"> </p> -->
+            <p> Student Name: <input type = "text" name = "name"> </p>
+            <label for="program">Program:</label>
+            <select name="program">
+                <option value="BSD">BSD</option>
+                <option value="CPA">CPA</option>
+                <option value="DSA">DSA</option>
+            </select>
+            <p> GPA: <input type = "text" name = "gpa"> </p>
+           <!--  <p> Photo: <input type = "file" name = "photo"> </p> <br> -->
+            <p> <input type = "submit" value = "Add Student"> 
+                <input type = "reset"> </p>
+            </div>
+        </form>
+        </fieldset>
+    </div>
+  </body>
+</html>
